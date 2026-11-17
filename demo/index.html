@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Trattoria Linde — sample project by Web Glowup</title>
+  <meta name="description" content="A made-up sample. Trattoria Linde is not a real restaurant and not a client of Web Glowup.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+  <div class="demo-banner">
+    <p><strong>Sample project by Web Glowup.</strong> Trattoria Linde is made up. Not a real business, not a client, and you can't actually book a table.</p>
+    <a href="../index.html">Back to Web Glowup</a>
+  </div>
+  <header class="hero wrap">
+    <p class="kicker">Sample restaurant</p>
+    <h1>Trattoria Linde</h1>
+    <p class="lead">A sample page: a short menu, a reservation form, and a table QR. None of it is a real place.</p>
+  </header>
+  <main class="wrap grid">
+    <section class="card span-2" aria-labelledby="menu-title">
+      <p class="kicker">Sample menu</p>
+      <h2 id="menu-title">From the kitchen today</h2>
+      <div class="menu">
+        <div class="dish"><strong>Tagliatelle al limone</strong><span>Sample dish. Not for sale.</span></div>
+        <div class="dish"><strong>Risotto allo zafferano</strong><span>Sample dish. Not for sale.</span></div>
+        <div class="dish"><strong>Tiramisu</strong><span>Sample dish. Not for sale.</span></div>
+      </div>
+    </section>
+    <section class="card" aria-labelledby="reserve-title">
+      <p class="kicker">Example</p>
+      <h2 id="reserve-title">Reserve a table</h2>
+      <p>This is what a booking could look like. Nothing is saved, and nothing is added to a calendar.</p>
+      <form id="demo-form">
+        <label>Name <input name="name" type="text" autocomplete="name" required></label>
+        <label>Day
+          <select name="day" required>
+            <option value="">Choose a day</option>
+            <option>Friday, May 8</option>
+            <option>Saturday, May 9</option>
+          </select>
+        </label>
+        <label>Time
+          <select name="time" required>
+            <option>6:30 PM</option>
+            <option selected>7:30 PM</option>
+            <option>8:00 PM</option>
+            <option>8:30 PM</option>
+          </select>
+        </label>
+        <label>Party size <input name="party" type="number" min="1" max="12" value="2" required></label>
+        <button type="submit">Show the reservation</button>
+      </form>
+      <p id="demo-result" class="note" hidden></p>
+    </section>
+    <section class="card" aria-labelledby="qr-title">
+      <p class="kicker">On site</p>
+      <h2 id="qr-title">QR on the table</h2>
+      <p>A sample pattern, on purpose not scannable. On a real table the code would open the menu or the booking page.</p>
+      <div class="qr" aria-hidden="true">
+        <i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i>
+        <i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i>
+        <i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i>
+        <i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i>
+        <i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">
+    <p>Sample project by Web Glowup. No real guests, no real reviews, no street address.</p>
+  </footer>
+  <script src="../js/demo.js"></script>
+</body>
+</html>
